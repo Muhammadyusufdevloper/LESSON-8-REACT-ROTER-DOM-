@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./Shop-products.scss"
 import axios from '../../api'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 const ShopProducts = () => {
     const[productApi,setProductApi] = useState(null)
@@ -25,7 +26,9 @@ const ShopProducts = () => {
     const product = productApi?.map((product)=>(
         <div className='shop__card' key={product.id}>
             <div className="shop__img-part">
-                <img src={product.images[0]} alt={product.title} />
+                <Link to={`/single/${product.id}`}>
+                    <img src={product.images[0]} alt={product.title} />
+                </Link>
             </div>
             <div className="shop__info-part">
                 <h3 className="shop__product-title">{product.title}</h3>
