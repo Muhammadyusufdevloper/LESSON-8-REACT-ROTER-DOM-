@@ -1,0 +1,119 @@
+.blog{
+    margin: 67px 63px;
+    &__card{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-top: 63px;
+        padding: 30px 35px 30px 50px;
+        border-radius: 30px;
+        background-color: #EDF2F4;
+    }
+    &__card__title{
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29.05px;
+        letter-spacing: 0.05em;
+        margin-bottom: 44px;
+        color: black; 
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;       
+    }
+    &__card__text{
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19.36px;
+        color: black; 
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 9;
+        overflow: hidden;       
+    }
+}
+
+@media (max-width:1300px){
+    .blog{
+        &__card__text{
+            font-size: 14px;
+            line-height: 18px;
+            color: black; 
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 9;
+            overflow: hidden;       
+        }
+    }
+}
+@media (max-width:1120px){
+    .blog{
+        &__card{
+            flex-direction: column;
+        }
+        &__card:nth-child(2){
+            flex-direction: column-reverse;
+        }
+        &__card__text{
+            font-size: 14px;
+            line-height: 18px;     
+        }
+    }
+}
+@media (max-width:900px){
+    .blog{
+        &__card__img-box{
+            display: none;
+        }
+        &__card__title{
+            margin-bottom: 30px;
+        }
+        &__card__text{
+            font-size: 14px;
+            line-height: 18px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 7;
+            overflow: hidden;       
+        }
+    }
+}
+@media (max-width:660px){
+    .blog{
+        &__card{
+            padding: 20px 25px 20px 30px;
+            margin-top: 40px;
+        }
+        &__card__title{
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        &__card__text{
+            font-size: 12px;
+            line-height: 16px;    
+        }
+    }
+}
+@media (max-width:550px){
+    .blog{
+        margin: 47px 63px;
+        &__card{
+            padding: 20px 25px 20px 30px;
+            margin-top: 40px;
+        }
+        &__card__title{
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        &__card__text{
+            font-size: 10px;
+            line-height: 16px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;       
+        }
+    }
+}
