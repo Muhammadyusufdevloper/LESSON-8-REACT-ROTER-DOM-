@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import "./Shop-products.scss"
 import axios from '../../api'
 import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
 
 const ShopProducts = () => {
     const[productApi,setProductApi] = useState(null)
